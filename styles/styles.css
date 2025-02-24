@@ -40,12 +40,10 @@ body {
 
 /* Header area */
 .page-header {
-  display: grid;
-  grid-template-areas: 
-    "logo regular-menu social-menu";
-  row-gap: 1.5rem;
-  justify-content: space-between;
-  margin: 1rem 1.5rem;
+  height: 55.5px;
+}
+.navbar{
+  padding:0
 }
 
 .logo {
@@ -78,14 +76,15 @@ body {
 .menu-item {
   padding-right: 1rem;
   text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.75rem;
+  font-weight: 500;
 }
 
 .menu-item > .menu-link {
   text-decoration: none;
   color: black;
-  letter-spacing: 1px;
-  font-size: 0.75rem;
-  font-weight: 500;
+  
 }
 
 .social .icon {
@@ -252,44 +251,6 @@ body {
   background-color: white;
 }
 
-/* Form styles */
-.contact-form {
-  display: none;
-  width: 325px;
-  padding: 2rem;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
-  margin: 1rem auto;
-}
-
-.form-row {
-  margin-top: 0.8rem;
-}
-
-.label-top {
-  display: block;
-}
-
-.label-top, [type=checkbox], [type=submit] {
-  margin: 0.2rem 0 0.2rem 0;
-}
-
-[type=text], [type=email], textarea {
-  padding: 0.5rem;
-}
-
-[type=text], [type=email], textarea {
-  width: 295px;
-  box-sizing: border-box;
-}
-
-[type=submit] {
-  padding: 1rem;
-  font-size: 1.1rem;
-  letter-spacing: 1px;
-  border: none;
-  box-shadow: 2px 2px 4px  rgba(0, 0, 0, 0.4);
-  cursor: pointer;
-}
 
 /* Media queries */
 /* Breakpoint suggestions: https://getbootstrap.com/docs/5.1/layout/breakpoints/ 
